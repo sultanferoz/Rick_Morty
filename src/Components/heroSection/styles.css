@@ -1,0 +1,97 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.content {
+  position: relative;
+  font-family: Cursive;
+  font-size: 7vw;
+  font-style: oblique;
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  /* align-items: center;
+  text-align: center; */
+  width: 100%;
+  padding: 20px;
+}
+.arrow {
+  /* background-color: red; */
+  height: 30px;
+  width: 100%;
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: center;
+}
+.swipe {
+  /* display: flex;
+  align-items: flex-end;
+  justify-content: end; */
+  z-index: 22;
+  color: white;
+  padding: 3px;
+  font-size: 35px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  animation: bounce 1s linear infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+.watch-trailer-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.watch-trailer-button:hover {
+  background-color: #e03e00;
+}
