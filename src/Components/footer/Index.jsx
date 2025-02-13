@@ -5,8 +5,8 @@ import {
   HeartOutlined,
 } from "@ant-design/icons";
 import ImageComponent from "../image/Index";
-import int from "../../../public/images/int.png";
-import star from "../../../public/images/atar.png";
+import int from "/images/int.png";
+import star from "/images/atar.png";
 import "./styles.css";
 
 const { Text } = Typography;

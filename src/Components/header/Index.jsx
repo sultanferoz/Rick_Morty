@@ -5,7 +5,7 @@ import { fetchCharacterData } from "../../Redux/characterSlice/CharacterSlice";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 import ImageComponent from "../image/Index";
-import logo from "../../../public/images/logo.png";
+import logo from "/images/logo.png";
 function Header() {
   const dispatch = useDispatch();
   const [searchInput, setSearchInput] = useState("");
